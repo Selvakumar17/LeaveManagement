@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Container styles */
+  div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Error message */
+  p {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+  
+  /* Image styling */
+  td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button:last-child {
+    background-color: #dc3545;
+  }
+  
+  button:last-child:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    th, td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    td img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    button {
+      font-size: 11px;
+      padding: 5px 8px;
+    }
+  }
+
+  /* AllStudents.css */
+.generate-pdf-btn {
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-responsive img {
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+  padding: 2px;
+  background-color: #f8f9fa;
+}
+
+.table th, .table td {
+  vertical-align: middle !important;
+}
+
+.alert {
+  text-align: center;
+}
+
+  

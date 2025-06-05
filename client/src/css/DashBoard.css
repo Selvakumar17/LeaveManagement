@@ -1,0 +1,83 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal direction */
+  justify-content: center; /* Center align the items horizontally */
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping if space allows */
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically within each card */
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 0; /* Remove vertical margins for better alignment */
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px; /* Set a fixed width for equal-sized cards */
+  height: 150px; /* Set a fixed height for uniformity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Center text and icons */
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-icon {
+  font-size: 2rem;
+}
+
+.dashboard-icon {
+  font-size: 2rem;
+}
+
+/* Specific Icon Styles */
+.pending-icon {
+  color: #ffc107; /* Yellow for pending */
+}
+
+.reject-icon {
+  color: #dc3545; /* Red for rejected */
+}
+
+.accept-icon {
+  color: #28a745; /* Green for accepted */
+}
+
+.dashboard-link-icon {
+  color: #007bff; /* Blue for links */
+}
+
+.dashboard-container a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .dashboard-container {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .dashboard-card {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: 400px;
+      height: auto; /* Adjust height dynamically */
+  }
+
+  .dashboard-icon {
+      font-size: 1.5rem;
+  }
+
+  .dashboard-link {
+      font-size: 1rem;
+  }
+}

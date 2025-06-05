@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Ensure minimum height for proper layout */
+  background-color: #f4f4f9;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 95%;
+  margin-bottom: 20px; /* Add spacing below profile card */
+  flex-direction: row; /* Ensure row-wise layout */
+}
+
+.right {
+  width: 50%; /* Take up 50% of the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img {
+  width: 100%; /* Scale image to fit container */
+  height: 100%; 
+  object-fit: cover;
+  border-right: 1px solid #ddd; /* Add a vertical divider */
+}
+
+.left {
+  width: 50%; /* Take up 50% of the container width */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically align text */
+}
+
+.left p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.left strong {
+  color: #555;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.leave-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-container thead {
+  background-color: #f9fafb;
+}
+
+.leave-container th,
+.leave-container td {
+  padding: 12px; /* Slightly increased padding for better readability */
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.leave-container th {
+  font-weight: bold;
+  color: #555;
+}
+
+.leave-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leave-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pro-container {
+    flex-wrap: wrap; /* Stack image and text vertically on small screens */
+  }
+
+  .right,
+  .left {
+    width: 100%; /* Make both sections full-width */
+  }
+
+  .right {
+    height: 200px; /* Set a fixed height for the image */
+  }
+
+  .leave-container {
+    width: 95%; /* Adjust container width for smaller screens */
+  }
+
+  .leave-container th,
+  .leave-container td {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
